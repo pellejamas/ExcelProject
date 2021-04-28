@@ -68,10 +68,11 @@ public class Createinvoice {
 			@SuppressWarnings("unused")
 			Sheet sh2 = workbook.createSheet("Second");
 			//Write the output to file
-			FileOutputStream fileOut = new FileOutputStream("C:\\Users\\snick\\Desktop\\excel3.xls");
+			FileOutputStream fileOut = new FileOutputStream("C:\\Users\\snick\\Desktop\\excel4.xls");
 			workbook.write(fileOut);
 			fileOut.close();
 			workbook.close();
+			System.out.println("Completed");
 		}
 		catch (Exception e) {
 			e.printStackTrace();
